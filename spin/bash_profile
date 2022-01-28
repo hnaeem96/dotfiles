@@ -1,0 +1,5 @@
+source ~/.aliases
+source ~/.spin_aliases
+
+export VISUAL=vim
+export EDITOR="$VISUAL"

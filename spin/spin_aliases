@@ -1,0 +1,27 @@
+# Dev aliases
+alias dud="restart"
+alias du="update"
+alias dt="bin/test"
+alias dtb="bin/test --include-branch-commits"
+alias ds="bin/style"
+alias dsb="bin/style --include-branch-commits"
+alias dtc="bin/srb typecheck"
+alias dtcg="bin/tapioca dsl"
+alias drc="bin/rails console"
+
+# Unit Aliases
+alias sc="systemctl"
+alias scf="systemctl list-units --failed"
+alias scst="systemctl | grep \"start\""
+alias scs="systemctl status $*"
+alias scr="systemctl restart $*"
+
+alias jc="journalctl"
+alias jct="journalctl -xfu $*"
+
+# SQL aliases
+alias sqlace="echo \"open 'mysql://\$MYSQL_USER:\$MYSQL_PASSWORD@\$SPIN_INSTANCE_FQDN:\$MYSQL_PORT' -a 'Sequel Ace'\""
+
+# Bootstrap aliases
+alias eab="bin/rails extensions:apps:bootstrap"
+alias gcauth="gcloud auth application-default login --no-launch-browser"

@@ -1,0 +1,6 @@
+source ~/.aliases
+source ~/.local_aliases
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export PATH=$PATH:~/.dev_scripts

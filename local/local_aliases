@@ -1,0 +1,24 @@
+# Dev Aliases
+alias dud="dev down && dev up"
+alias du="dev up"
+alias dt="dev test"
+alias dtb="dev test --include-branch-commits"
+alias ds="dev style"
+alias dsb="dev style --include-branch-commits"
+alias dtc="bin/srb typecheck"
+alias dtcg="bin/tapioca dsl"
+alias drc="dev console"
+
+# Spin Helpers
+alias spc="spin create $*"
+alias spce="spin create partners"
+alias sps="spin shell"
+alias spl="spin list"
+alias spd="spin destroy $*"
+alias spda="spin destroy --all"
+alias spo="spin-open $*"
+
+# Shopify CLI Aliases
+alias shopifyl="~/src/github.com/Shopify/shopify-cli/bin/shopify"
+alias shopifyls="SPIN=1 INFER_SPIN=1 SSL_VERIFY_NONE=1 ~/src/github.com/Shopify/shopify-cli/bin/shopify"
+alias shopifys="SPIN=1 INFER_SPIN=1 SSL_VERIFY_NONE=1 shopify"

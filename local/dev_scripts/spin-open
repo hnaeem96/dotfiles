@@ -1,0 +1,13 @@
+#!/bin/bash
+
+OPEN=$1
+SPIN_FQDN=$(spin info fqdn)
+
+case $OPEN  in
+    shop*)      open "https://${OPEN}.shopify.${SPIN_FQDN}" ;;
+    admin*)     open "https://shop${OPEN#"admin"}.shopify.${SPIN_FQDN}/admin" ;;
+    internal)   open "https://app.shopify.${SPIN_FQDN}/services/internal" ;;
+    partners)   open "https://partners.${SPIN_FQDN}/internal" ;;
+    identity)   open "https://identity.${SPIN_FQDN}/services" ;;
+    *)          open "https://${OPEN}.${SPIN_FQDN}";;
+esac
